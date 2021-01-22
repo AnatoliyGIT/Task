@@ -1,0 +1,33 @@
+@import "vars";
+@import "blocks/forms";
+@import "blocks/title";
+@import "blocks/message";
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: @text-family;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+.container {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+
+  background-color: @background-color-container;
+  position: relative;
+  z-index: 1;
+}
+
+.registration {
+  width: 500px;
+}

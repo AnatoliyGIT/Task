@@ -1,0 +1,120 @@
+@import "../vars";
+
+.registration__form {
+  max-width: 80vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: @white-color;
+  border-radius: 5px;
+}
+
+.registration__form_input {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.registration__form_input-label-left,
+.registration__form_input-label-right_email,
+.registration__form_input-label-right_password-one,
+.registration__form_input-label-right_password-two {
+  margin: 0;
+  color: @text-color;
+}
+
+.registration__form_input-value-email,
+.registration__form_input-value-password-one,
+.registration__form_input-value-password-two {
+  width: 95%;
+  height: 45px;
+  font-family: Ubuntu-Regular, sans-serif;
+  font-size: 1rem;
+  color: @text-color;
+  display: flex;
+}
+
+.registration__form_buttons {
+  margin: 20px 2px;
+  display: flex;
+  justify-content: center;
+}
+
+.registration__form_button {
+  width: auto;
+  margin-left: 7px;
+}
+
+.registration__form_button-link {
+  background: @button-color;
+  cursor: pointer;
+  font-family: @text-family;
+  font-size: 16px;
+  width: auto;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: @white-color;
+}
+
+.registration__form_button-link:hover {
+  color: @white-color;
+  background-color: @text-color;
+}
+
+.registration__form_input-prompt-link_email,
+.registration__form_input-prompt-link_password-one,
+.registration__form_input-prompt-link_password-two {
+  cursor: pointer;
+  padding: 12px;
+  position: absolute;
+}
+
+.registration__form_input-prompt-icon_email,
+.registration__form_input-prompt-icon_password-one,
+.registration__form_input-prompt-icon_password-two {
+  font-size: 1.5rem;
+}
+
+.registration__form_input-label_prompt {
+  padding: 0 10px;
+  width: max-content;
+  max-width: 250px;
+  height: auto;
+  border: 1px solid @text-color;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 32px;
+  cursor: default;
+  background: @background-prompt;
+  color: @text-color;
+}
+
+.registration__form_input-label_prompt::before,
+.registration__form_input-label_prompt::after {
+  content: '';
+  position: absolute;
+  top: 2px; left: -20px;
+  border: 10px solid transparent;
+}
+
+.registration__form_input-label_prompt::after {
+  border-right: 10px solid @background-prompt;
+  left: -19px;
+}
+
+.registration__form_input-label_prompt::before {
+  border-right: 10px solid @text-color;
+}
+
+.registration__form_input-label_prompt-text {
+  margin: 0;
+}
+
+.border_red {
+  border: 3px solid @text-color-red;
+  border-radius: 5px;
+}

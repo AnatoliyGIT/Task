@@ -1,0 +1,34 @@
+@import "../vars";
+
+.message {
+  display: none;
+}
+
+.visible {
+  display: flex;
+  padding: 10px;
+  max-width: 50%;
+  background-color: @message-background-finished;
+  border: 2px solid @text-color;
+  border-radius: 5px;
+  position: absolute;
+}
+
+.error {
+  top: 0;
+  max-width: 30%;
+  background-color: @message-background-error;
+}
+
+.message__text{
+  padding: 0 20px;
+  color: @text-color-red;
+  font-family: @text-family;
+  text-align: center;
+}
+
+.finished {
+  padding: 10px;
+  color: @text-color;
+  width: 500px;
+}
